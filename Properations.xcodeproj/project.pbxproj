@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8209970920DBF7FA003E4DE7 /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8209970720DBF7FA003E4DE7 /* PromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8209970920DBF7FA003E4DE7 /* Properations.h in Headers */ = {isa = PBXBuildFile; fileRef = 8209970720DBF7FA003E4DE7 /* Properations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8209973B20DBF929003E4DE7 /* FutureOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209973520DBF928003E4DE7 /* FutureOperation.swift */; };
 		8209973C20DBF929003E4DE7 /* PromiseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209973620DBF928003E4DE7 /* PromiseOperation.swift */; };
 		8209973F20DBF929003E4DE7 /* OperationQueue+CompletionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209973920DBF928003E4DE7 /* OperationQueue+CompletionOperation.swift */; };
 		8209974020DBF929003E4DE7 /* OperationStateCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209973A20DBF929003E4DE7 /* OperationStateCoordinator.swift */; };
 		82129562214675A400D914B5 /* FutureResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82129561214675A400D914B5 /* FutureResultTests.swift */; };
 		82129564214675A400D914B5 /* Properations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8209970420DBF7FA003E4DE7 /* Properations.framework */; };
-		821A5BFE220D98B400E8047C /* PromiseKitConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5BFD220D98B400E8047C /* PromiseKitConstants.swift */; };
+		821A5BFE220D98B400E8047C /* ProperationsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5BFD220D98B400E8047C /* ProperationsConstants.swift */; };
 		821A5C00220DA36000E8047C /* Promise+Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5BFF220DA36000E8047C /* Promise+Factories.swift */; };
 		821A5C02220DA41B00E8047C /* Future+Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5C01220DA41B00E8047C /* Future+Events.swift */; };
 		821A5C04220DA4FD00E8047C /* Future+Interdependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5C03220DA4FD00E8047C /* Future+Interdependencies.swift */; };
@@ -55,7 +55,7 @@
 
 /* Begin PBXFileReference section */
 		8209970420DBF7FA003E4DE7 /* Properations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Properations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8209970720DBF7FA003E4DE7 /* PromiseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PromiseKit.h; sourceTree = "<group>"; };
+		8209970720DBF7FA003E4DE7 /* Properations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Properations.h; sourceTree = "<group>"; };
 		8209970820DBF7FA003E4DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8209973520DBF928003E4DE7 /* FutureOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureOperation.swift; sourceTree = "<group>"; };
 		8209973620DBF928003E4DE7 /* PromiseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromiseOperation.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		8212955F214675A400D914B5 /* ProperationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProperationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82129561214675A400D914B5 /* FutureResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureResultTests.swift; sourceTree = "<group>"; };
 		82129563214675A400D914B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		821A5BFD220D98B400E8047C /* PromiseKitConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKitConstants.swift; sourceTree = "<group>"; };
+		821A5BFD220D98B400E8047C /* ProperationsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProperationsConstants.swift; sourceTree = "<group>"; };
 		821A5BFF220DA36000E8047C /* Promise+Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Factories.swift"; sourceTree = "<group>"; };
 		821A5C01220DA41B00E8047C /* Future+Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+Events.swift"; sourceTree = "<group>"; };
 		821A5C03220DA4FD00E8047C /* Future+Interdependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+Interdependencies.swift"; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 		8209970620DBF7FA003E4DE7 /* Properations */ = {
 			isa = PBXGroup;
 			children = (
-				821A5BFD220D98B400E8047C /* PromiseKitConstants.swift */,
+				821A5BFD220D98B400E8047C /* ProperationsConstants.swift */,
 				8209976020DC5993003E4DE7 /* Internal */,
 				82ABEDA520E6697F00285E43 /* Core Types */,
 				821A5BFC220D988200E8047C /* Extensions */,
@@ -149,7 +149,7 @@
 		8209975D20DC5822003E4DE7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8209970720DBF7FA003E4DE7 /* PromiseKit.h */,
+				8209970720DBF7FA003E4DE7 /* Properations.h */,
 				8209970820DBF7FA003E4DE7 /* Info.plist */,
 			);
 			path = Resources;
@@ -246,7 +246,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8209970920DBF7FA003E4DE7 /* PromiseKit.h in Headers */,
+				8209970920DBF7FA003E4DE7 /* Properations.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +350,7 @@
 			files = (
 				8209974020DBF929003E4DE7 /* OperationStateCoordinator.swift in Sources */,
 				821A5C02220DA41B00E8047C /* Future+Events.swift in Sources */,
-				821A5BFE220D98B400E8047C /* PromiseKitConstants.swift in Sources */,
+				821A5BFE220D98B400E8047C /* ProperationsConstants.swift in Sources */,
 				821A5C08220DA73D00E8047C /* Future+Mapping.swift in Sources */,
 				8209973B20DBF929003E4DE7 /* FutureOperation.swift in Sources */,
 				821A5C00220DA36000E8047C /* Promise+Factories.swift in Sources */,
