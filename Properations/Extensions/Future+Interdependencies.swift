@@ -54,7 +54,7 @@ public extension Promises {
 
         // Create a success operation for each future
         let raceWinnerHandler = { (winner: Future<T>) -> Void in
-            guard promise.isResultFulfilled == false,
+            guard promise.isFulfilled == false,
                 let value = winner.fulfilledResult.successValue else {
                 return
             }

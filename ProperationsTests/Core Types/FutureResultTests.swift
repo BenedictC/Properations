@@ -12,20 +12,20 @@ import Properations
 
 class FutureResultTests: XCTestCase {
 
-    func testIsResultFulfilledWithSuccess() {
+    func testIsFulfilledWithSuccess() {
         let promise = Promises.make(promising: Void.self)
 
-        XCTAssertEqual(promise.isResultFulfilled, false)
+        XCTAssertEqual(promise.isFulfilled, false)
         promise.succeed()
-        XCTAssertEqual(promise.isResultFulfilled, true)
+        XCTAssertEqual(promise.isFulfilled, true)
     }
 
-    func testIsResultFulfilledWithFailure() {
+    func testIsFulfilledWithFailure() {
         let promise = Promises.make(promising: Void.self)
 
-        XCTAssertEqual(promise.isResultFulfilled, false)
+        XCTAssertEqual(promise.isFulfilled, false)
         promise.fail(with: TestError.error)
-        XCTAssertEqual(promise.isResultFulfilled, true)
+        XCTAssertEqual(promise.isFulfilled, true)
     }
 
     func testResultValuePropertiesWithSuccess() {

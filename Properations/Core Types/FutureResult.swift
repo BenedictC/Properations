@@ -15,6 +15,7 @@ import Foundation
 // Swift 5 has a native result type
 public typealias FutureResult<Success> = Result<Success, Error>
 #else
+// Define a result type for pre Swift 5 usage. This is only a subset of the functionality provided by the Result type in Swift 5.
 public enum FutureResult<Success> {
     public typealias Failure = Error
 
@@ -45,13 +46,13 @@ public protocol FutureResultable {
 
 public extension FutureResultable {
 
-    var isResultFulfilled: Bool {
+    var isFulfilled: Bool {
         return result != nil
     }
 }
 
 
-// MARK: - Result helpers
+// MARK: - Additional Accessors
 
 public extension FutureResult {
 
@@ -86,15 +87,11 @@ public extension FutureResult {
 }
 
 
+// MARK: - FutureResult<Void> addition
+
 public extension FutureResult where Success == Void {
 
-    #if swift(>=5)
-    static var success: Result<Void, Failure> {
-        return Result.success(())
-    }
-    #else
     static var success: FutureResult<Void> {
         return FutureResult.success(())
     }
-    #endif
 }
