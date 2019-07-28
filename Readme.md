@@ -23,7 +23,7 @@ The same function written using futures could look like this:
 func asynchronousMethod() -> Future<Bool>
 ```
 
-The use of an object to reperesent the completion handler allows us to take advantage of other object orientant techniques.
+The use of an object to reperesent the completion handler allows us to take advantage of other object orientated techniques.
 
 The result of the future is a property of the future:
 ```swift
