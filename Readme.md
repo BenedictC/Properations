@@ -13,20 +13,20 @@ Futures and promises are a technique for managing asynchronous code.
 
 A future is an object that will at some point in the future contain a value. Without futures a function that returns its result asynchronously could be written like so:
 
-```
+```swift
 func asynchronousMethod(completionHandler: @escaping (Bool) -> Void)
 ```
 
 The same function written using futures could look like this:
 
-```
+```swift
 func asynchronousMethod() -> Future<Bool>
 ```
 
 The use of an object to reperesent the completion handler allows us to take advantage of other object orientant techniques.
 
 The result of the future is a property of the future:
-```
+```swift
 let future = asynchronousMethod()
 guard let result = future.result else {
     print("Future is not fulfilled.")
@@ -34,14 +34,14 @@ guard let result = future.result else {
 switch result {
 case .success(let value):
     print("Success! \(value)")
-    case .failure(let error):
+case .failure(let error):
     print("Failure! \(error)")
 }
 ```
 
 The above example leaves a key aspect of futures unexplained: how do we know when the future has been fulfilled? Futures have methods for responding to completion. These methods all return another future which means that they can be chained:
 
-```
+```swift
 let future = asynchronousMethod()
 .onSuccess { value in
         print("Success! \(value)")
@@ -57,9 +57,9 @@ There are methods that transforming and combining results, errors recovery, dela
 
 ### What is a promise?
 
-All promises are futures and all futures are promises. Confused? Thought so. The terms future and promise refer the context in the future/promise object is being used. In the example of a future described above we only looked at how the data was recieved and that is why we used the term future. The data must also be transmitted and that is when we refer to the object as a promise. Let's flesh out the function above:
+All promises are futures and all futures are promises. Confused? Thought so. The terms future and promise refer the context in which the future/promise object is being used. In the example of a future described above we only looked at how the data was recieved and that is why we used the term future. The data must also be transmitted and that is when we refer to the object as a promise. Let's flesh out the function above:
 
-```
+```swift
 func asynchronousMethod() -> Future<Bool> {
     let promise = Promises.make(promising: Bool.self)
     promise.succeed(with: true)
@@ -76,4 +76,3 @@ func asynchronousMethod() -> Future<Bool> {
 ### Other details
 
 - By default any closures passed to `Properations` is executed on the main thread. If a method takes a closure argument then it will also take an optional execution queue argument which defaults to `OperationQueue.main`.
-
