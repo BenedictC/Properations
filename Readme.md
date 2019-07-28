@@ -74,4 +74,4 @@ func asynchronousMethod() -> Future<Bool> {
 
 ### Other details
 
-- By default any closures passed to `Properations` is executed on the main thread. If a method takes a closure argument then it will also take an optional execution queue argument which defaults to `OperationQueue.main`.
+- By default any closures passed to `Properations` is executed on the main thread. If a method takes a closure argument then it will also take an execution queue argument which defaults to `OperationQueue.main`.
