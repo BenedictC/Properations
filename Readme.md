@@ -51,8 +51,7 @@ let future = asynchronousMethod()
 }
 ```
 
-There are methods that transforming and combining results, errors recovery, delaying and creating interdependencies between futures.
-
+There are methods for transforming and combining results, errors recovery, delaying and creating interdependencies between futures.
 
 
 ### What is a promise?
