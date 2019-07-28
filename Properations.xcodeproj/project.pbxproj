@@ -23,6 +23,8 @@
 		821A5C0A220DA76300E8047C /* Future+Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5C09220DA76300E8047C /* Future+Timing.swift */; };
 		821A5C0C220DA79000E8047C /* Future+ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5C0B220DA79000E8047C /* Future+ErrorHandling.swift */; };
 		821A5C0E220DA7FB00E8047C /* Future+Combining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5C0D220DA7FB00E8047C /* Future+Combining.swift */; };
+		828B892D22EE405C0043B64B /* Future+ChainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828B892C22EE405C0043B64B /* Future+ChainAccess.swift */; };
+		828B892F22EE41470043B64B /* Future+ChainAccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828B892E22EE41470043B64B /* Future+ChainAccessTests.swift */; };
 		829E898B219C325600B0278B /* BlockingPromiseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829E898A219C325600B0278B /* BlockingPromiseOperation.swift */; };
 		82C0A501223F8E4100DA8197 /* FutureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C0A500223F8E4100DA8197 /* FutureResult.swift */; };
 		82C7958822EB187200E90E82 /* OperationStateCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7958722EB187200E90E82 /* OperationStateCoordinatorTests.swift */; };
@@ -74,6 +76,8 @@
 		821A5C0B220DA79000E8047C /* Future+ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+ErrorHandling.swift"; sourceTree = "<group>"; };
 		821A5C0D220DA7FB00E8047C /* Future+Combining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+Combining.swift"; sourceTree = "<group>"; };
 		823D3132214BBACA008E27C7 /* Properations.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Properations.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		828B892C22EE405C0043B64B /* Future+ChainAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+ChainAccess.swift"; sourceTree = "<group>"; };
+		828B892E22EE41470043B64B /* Future+ChainAccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+ChainAccessTests.swift"; sourceTree = "<group>"; };
 		829E898A219C325600B0278B /* BlockingPromiseOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockingPromiseOperation.swift; sourceTree = "<group>"; };
 		82C0A500223F8E4100DA8197 /* FutureResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureResult.swift; sourceTree = "<group>"; };
 		82C7958722EB187200E90E82 /* OperationStateCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationStateCoordinatorTests.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				821A5C0D220DA7FB00E8047C /* Future+Combining.swift */,
+				828B892C22EE405C0043B64B /* Future+ChainAccess.swift */,
 				821A5C0B220DA79000E8047C /* Future+ErrorHandling.swift */,
 				821A5C01220DA41B00E8047C /* Future+Events.swift */,
 				82C795DE22EBB8E200E90E82 /* Future+Guarding.swift */,
@@ -227,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				82C7959522EB191100E90E82 /* Future+CombiningTests.swift */,
+				828B892E22EE41470043B64B /* Future+ChainAccessTests.swift */,
 				82C7959922EB192600E90E82 /* Future+ErrorHandlingTests.swift */,
 				82C7959722EB191A00E90E82 /* Future+EventsTests.swift */,
 				82C7959322EB190700E90E82 /* Future+GuardingTests.swift */,
@@ -362,6 +368,7 @@
 				821A5C0C220DA79000E8047C /* Future+ErrorHandling.swift in Sources */,
 				821A5C0E220DA7FB00E8047C /* Future+Combining.swift in Sources */,
 				8209973C20DBF929003E4DE7 /* PromiseOperation.swift in Sources */,
+				828B892D22EE405C0043B64B /* Future+ChainAccess.swift in Sources */,
 				829E898B219C325600B0278B /* BlockingPromiseOperation.swift in Sources */,
 				82C0A501223F8E4100DA8197 /* FutureResult.swift in Sources */,
 			);
@@ -384,6 +391,7 @@
 				82C7959222EB18C700E90E82 /* BlockingPromiseOperationTests.swift in Sources */,
 				82C7959622EB191100E90E82 /* Future+CombiningTests.swift in Sources */,
 				82C7959E22EB193800E90E82 /* Future+SugarTests.swift in Sources */,
+				828B892F22EE41470043B64B /* Future+ChainAccessTests.swift in Sources */,
 				82129562214675A400D914B5 /* FutureResultTests.swift in Sources */,
 				82C795A222EB195000E90E82 /* Future+MappingTests.swift in Sources */,
 				82C7959422EB190700E90E82 /* Future+GuardingTests.swift in Sources */,
