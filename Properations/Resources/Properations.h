@@ -6,7 +6,7 @@
 //  Copyright © 2019 Benedict Cohen. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for Properations.
 FOUNDATION_EXPORT double ProperationsVersionNumber;
