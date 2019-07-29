@@ -34,7 +34,7 @@ public extension Promises {
     }()
 
     // Result is fulfilled once on of the futures successfully completes
-    static func race<T>(_ futures: [Future<T>]) -> Future<T> {
+    static func race<T, C: Collection>(_ futures: C) -> Future<T> where C.Element: Future<T> {
         let promise = Promise<T>.make()
         // Create a single failure operation that fires once all the futures have completed.
         let failureOp = BlockOperation()

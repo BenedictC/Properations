@@ -25,7 +25,7 @@ public func || <T>(lhs: Future<T>, rhs: Future<T>) -> Future<T> {
 
 // MARK: - Static methods as free functions
 
-public func collect<T>( _ futures: [Future<T>]) -> Future<[T]> {
+public func collect<T, C: Collection>( _ futures: C) -> Future<[T]> where C.Element: Future<T> {
     return Promises.collect(futures)
 }
 
@@ -41,14 +41,14 @@ public func combine<S1, S2, S3, S4>(_ future1: Future<S1>, _ future2: Future<S2>
     return Promises.combine(future1, future2, future3, future4)
 }
 
-public func race<T>(_ futures: [Future<T>]) -> Future<T> {
+public func race<T, C: Collection>(_ futures: C) -> Future<T> where C.Element: Future<T> {
     return Promises.race(futures)
 }
 
 
 // MARK: - Static methods as Array extensions
 
-public extension Array {
+public extension Collection {
 
     func collectFutures<S>() -> Future<[S]> where Element: Future<S> {
         return Promises.collect(self)

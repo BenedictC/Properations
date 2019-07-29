@@ -13,7 +13,7 @@ import Foundation
 
 public extension Promises {
 
-    static func collect<T>( _ futures: [Future<T>]) -> Future<[T]> {
+    static func collect<T, C: Collection>( _ futures: C) -> Future<[T]> where C.Element: Future<T> {
         return makeFuture(byCombining: futures) { () throws -> [T] in
             do {
                 return try futures.map { try $0.fulfilledResult.get() }
@@ -87,7 +87,7 @@ public extension Promises {
 
 private extension Promises {
 
-    static func makeFuture<T>(byCombining dependencies: [Operation], using handler: @escaping () throws -> T) -> Future<T> {
+    static func makeFuture<T, C: Collection>(byCombining dependencies: C, using handler: @escaping () throws -> T) -> Future<T> where C.Element: Operation {
         let promise = Promise<T>.make()
 
         // Create an operation ...
