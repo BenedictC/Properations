@@ -75,3 +75,29 @@ func asynchronousMethod() -> Future<Bool> {
 ### Other details
 
 - By default any closures passed to `Properations` is executed on the main thread. If a method takes a closure argument then it will also take an execution queue argument which defaults to `OperationQueue.main`.
+
+
+## Examples
+
+### Wrapping an completion closure
+
+```swift
+func reverseGeocodeLocation(_ location: CLLocation, completionHandler: @escaping CLGeocodeCompletionHandler) -> Future<[CLPlacemark]> {
+    let promise = Promise.make(promising: [CLPlacemark].self)
+    CLGeocoder().reverseGeocodeLocation(location) { placemarks, error in
+        do {
+            if let error = error {
+                throw error
+            }
+            let value = placemarks ?? []
+            promise.succeed(with: value)
+        } catch {
+            promise.fail(with: error)
+        }
+    }    
+    return promise
+}
+```
+Things to note: 
+- The return type is `Future` and not `Promise`. This keeps the scope of mutablity to a minimum.
+- The use of `do`/`catch` to simplifies the control flow.
