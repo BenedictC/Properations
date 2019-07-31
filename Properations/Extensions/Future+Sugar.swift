@@ -11,8 +11,33 @@ import Foundation
 
 // MARK: - Combine
 
-public func +<U, V>(lhs: Future<U>, rhs: Future<V>) -> Future<(U, V)> {
+public func +<L, R>(lhs: Future<L>, rhs: Future<R>) -> Future<(L, R)> {
     return Promises.combine(lhs, rhs)
+}
+
+public func +<L, R1, R2>(lhs: Future<L>, rhs: Future<(R1, R2)>) -> Future<(L, R1, R2)> {
+    return Promises.combine(lhs, rhs)
+        .mapValue { ($0, $1.0, $1.1) }
+}
+
+public func +<L, R1, R2, R3>(lhs: Future<L>, rhs: Future<(R1, R2, R3)>) -> Future<(L, R1, R2, R3)> {
+    return Promises.combine(lhs, rhs)
+        .mapValue { ($0, $1.0, $1.1, $1.2) }
+}
+
+public func +<L1, L2, R>(lhs: Future<(L1, L2)>, rhs: Future<R>) -> Future<(L1, L2, R)> {
+    return Promises.combine(lhs, rhs)
+        .mapValue { ($0.0, $0.1, $1) }
+}
+
+public func +<L1, L2, L3, R>(lhs: Future<(L1, L2, L3)>, rhs: Future<R>) -> Future<(L1, L2, L3, R)> {
+    return Promises.combine(lhs, rhs)
+        .mapValue { ($0.0, $0.1, $0.2, $1) }
+}
+
+public func +<L1, L2, R1, R2>(lhs: Future<(L1, L2)>, rhs: Future<(R1, R2)>) -> Future<(L1, L2, R1, R2)> {
+    return Promises.combine(lhs, rhs)
+        .mapValue { ($0.0, $0.1, $1.0, $1.1) }
 }
 
 
@@ -25,23 +50,23 @@ public func || <T>(lhs: Future<T>, rhs: Future<T>) -> Future<T> {
 
 // MARK: - Static methods as free functions
 
-public func collect<T, C: Collection>( _ futures: C) -> Future<[T]> where C.Element: Future<T> {
+public func collectFutures<T, C: Collection>( _ futures: C) -> Future<[T]> where C.Element: Future<T> {
     return Promises.collect(futures)
 }
 
-public func combine<S1, S2>(_ future1: Future<S1>, _ future2: Future<S2>) -> Future<(S1, S2)> {
+public func combineFutures<S1, S2>(_ future1: Future<S1>, _ future2: Future<S2>) -> Future<(S1, S2)> {
     return Promises.combine(future1, future2)
 }
 
-public func combine<S1, S2, S3>(_ future1: Future<S1>, _ future2: Future<S2>, _ future3: Future<S3>) -> Future<(S1, S2, S3)> {
+public func combineFutures<S1, S2, S3>(_ future1: Future<S1>, _ future2: Future<S2>, _ future3: Future<S3>) -> Future<(S1, S2, S3)> {
     return Promises.combine(future1, future2, future3)
 }
 
-public func combine<S1, S2, S3, S4>(_ future1: Future<S1>, _ future2: Future<S2>, _ future3: Future<S3>, _ future4: Future<S4>) -> Future<(S1, S2, S3, S4)> {
+public func combineFutures<S1, S2, S3, S4>(_ future1: Future<S1>, _ future2: Future<S2>, _ future3: Future<S3>, _ future4: Future<S4>) -> Future<(S1, S2, S3, S4)> {
     return Promises.combine(future1, future2, future3, future4)
 }
 
-public func race<T, C: Collection>(_ futures: C) -> Future<T> where C.Element: Future<T> {
+public func raceFutures<T, C: Collection>(_ futures: C) -> Future<T> where C.Element: Future<T> {
     return Promises.race(futures)
 }
 
