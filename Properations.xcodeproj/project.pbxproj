@@ -183,8 +183,8 @@
 		821A5BFC220D988200E8047C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				821A5C0D220DA7FB00E8047C /* Future+Combining.swift */,
 				828B892C22EE405C0043B64B /* Future+ChainAccess.swift */,
+				821A5C0D220DA7FB00E8047C /* Future+Combining.swift */,
 				821A5C0B220DA79000E8047C /* Future+ErrorHandling.swift */,
 				821A5C01220DA41B00E8047C /* Future+Events.swift */,
 				82C795DE22EBB8E200E90E82 /* Future+Guarding.swift */,
@@ -231,8 +231,8 @@
 		82C795A522EB196200E90E82 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				82C7959522EB191100E90E82 /* Future+CombiningTests.swift */,
 				828B892E22EE41470043B64B /* Future+ChainAccessTests.swift */,
+				82C7959522EB191100E90E82 /* Future+CombiningTests.swift */,
 				82C7959922EB192600E90E82 /* Future+ErrorHandlingTests.swift */,
 				82C7959722EB191A00E90E82 /* Future+EventsTests.swift */,
 				82C7959322EB190700E90E82 /* Future+GuardingTests.swift */,

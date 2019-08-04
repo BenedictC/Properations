@@ -142,5 +142,5 @@ class Future_CombiningTests: XCTestCase {
 
         XCTAssertEqual(equatableDescription(of: expected), equatableDescription(of: actual))
         XCTAssertNil(weakVarFuture)
-    }    
+    }
 }
