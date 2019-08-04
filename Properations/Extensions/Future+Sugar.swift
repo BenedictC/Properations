@@ -11,34 +11,41 @@ import Foundation
 
 // MARK: - Combine
 
-public func +<L, R>(lhs: Future<L>, rhs: Future<R>) -> Future<(L, R)> {
-    return Promises.combine(lhs, rhs)
-}
+// TODO: These functions fail when the expression contains more than 2 futures
 
-public func +<L, R1, R2>(lhs: Future<L>, rhs: Future<(R1, R2)>) -> Future<(L, R1, R2)> {
-    return Promises.combine(lhs, rhs)
-        .mapToValue { ($0, $1.0, $1.1) }
-}
-
-public func +<L, R1, R2, R3>(lhs: Future<L>, rhs: Future<(R1, R2, R3)>) -> Future<(L, R1, R2, R3)> {
-    return Promises.combine(lhs, rhs)
-        .mapToValue { ($0, $1.0, $1.1, $1.2) }
-}
-
-public func +<L1, L2, R>(lhs: Future<(L1, L2)>, rhs: Future<R>) -> Future<(L1, L2, R)> {
-    return Promises.combine(lhs, rhs)
-        .mapToValue { ($0.0, $0.1, $1) }
-}
-
-public func +<L1, L2, L3, R>(lhs: Future<(L1, L2, L3)>, rhs: Future<R>) -> Future<(L1, L2, L3, R)> {
-    return Promises.combine(lhs, rhs)
-        .mapToValue { ($0.0, $0.1, $0.2, $1) }
-}
-
-public func +<L1, L2, R1, R2>(lhs: Future<(L1, L2)>, rhs: Future<(R1, R2)>) -> Future<(L1, L2, R1, R2)> {
-    return Promises.combine(lhs, rhs)
-        .mapToValue { ($0.0, $0.1, $1.0, $1.1) }
-}
+//public func +<L, R, FL: ResultableOp, FR: ResultableOp>(lhs: FL, rhs: FR) -> Future<(L, R)> where FL.Success == L, FR.Success == R {
+//    return Promises.combine(lhs, rhs)
+//}
+//
+//public func +<L, R1, R2, LF: Future<L>, RF: Future<(R1, R2)>>(lhs: LF, rhs: RF) -> Future<(L, R1, R2)> {
+//    return Promises.combine(lhs, rhs)
+//        .mapToValue { ($0, $1.0, $1.1) }
+//}
+//
+//public func +<L, R1, R2, R3, LF: Future<L>, RF: Future<(R1, R2, R3)>>(lhs: LF, rhs: RF) -> Future<(L, R1, R2, R3)> {
+//    return Promises.combine(lhs, rhs)
+//        .mapToValue { ($0, $1.0, $1.1, $1.2) }
+//}
+//
+//public func +<LF: ResultableOp, RF: ResultableOp, L1, L2>(lhs: LF, rhs: RF) -> Future<(L1, L2, RF.Success)> where LF.Success == (L1, L2) {
+//    return Promises.combine(lhs, rhs)
+//        .mapToValue { ($0.0, $0.1, $1) }
+//}
+//
+//public func +<L1, L2, R, LF: Future<(L1, L2)>, RF: Future<R>>(lhs: LF, rhs: RF) -> Future<(L1, L2, R)> {
+//    return Promises.combine(lhs, rhs)
+//        .mapToValue { ($0.0, $0.1, $1) }
+//}
+//
+//public func +<L1, L2, L3, R, LF: Future<(L1, L2, L3)>, RF: Future<R>>(lhs: LF, rhs: RF) -> Future<(L1, L2, L3, R)> {
+//    return Promises.combine(lhs, rhs)
+//        .mapToValue { ($0.0, $0.1, $0.2, $1) }
+//}
+//
+//public func +<L1, L2, R1, R2, LF: Future<(L1, L2)>, RF: Future<(R1, R2)>>(lhs: LF, rhs: RF) -> Future<(L1, L2, R1, R2)> {
+//    return Promises.combine(lhs, rhs)
+//        .mapToValue { ($0.0, $0.1, $1.0, $1.1) }
+//}
 
 
 // MARK: - Race
