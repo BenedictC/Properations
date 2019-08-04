@@ -11,10 +11,10 @@ import Foundation
 
 // MARK: - Error handling
 
-extension FutureResultable where Self: Operation {
+public extension FutureResultable where Self: Operation {
 
     /// The returned future is fulfilled after the handler is executed.
-    public func recover(on executionQueue: OperationQueue = .main, errorHandler: @escaping (Error) throws -> Success) -> Future<Success> {
+    func recover(on executionQueue: OperationQueue = .main, errorHandler: @escaping (Error) throws -> Success) -> Future<Success> {
         // Create and enqueue a promise which will be used as the return value.
         let promise = Promise<Success>.make()
         // When progress completes...

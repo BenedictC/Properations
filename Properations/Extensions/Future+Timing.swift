@@ -11,12 +11,12 @@ import Foundation
 
 // MARK: - Timing
 
-extension FutureResultable where Self: Operation {
+public extension FutureResultable where Self: Operation {
 
-    public func delay(for interval: DispatchTimeInterval) -> Future<Success> {
+    func delay(for interval: DispatchTimeInterval) -> Future<Success> {
         let promise = Promise<Success>.make()
 
-        OperationQueue.main.addCompletionOperation(to: self) { future in
+        Promises.defaultOperationQueue.addCompletionOperation(to: self) { future in
             switch future.fulfilledResult {
             case .failure(let error):
                 promise.fail(with: error)
