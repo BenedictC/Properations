@@ -10,6 +10,7 @@ import Foundation
 
 
 public class FutureOperation<Success>: Operation, FutureResultable {
+    public typealias Success = Success
 
     public var result: FutureResult<Success>? { return nil }
 }
