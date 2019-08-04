@@ -43,11 +43,11 @@ The above example leaves a key aspect of futures unexplained: how do we know whe
 
 ```swift
 let future = asynchronousMethod()
-.onSuccess { value in
+    .onSuccess { value in
         print("Success! \(value)")
     }
-.onFailure { error in
-    print("Failure! \(error)")
+    .onFailure { error in
+        print("Failure! \(error)")
 }
 ```
 
