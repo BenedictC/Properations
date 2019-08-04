@@ -14,10 +14,27 @@ class Future_SugarTests: XCTestCase {
 
     // TODO: We should test the sugar seeing as it's just syntax it's low priority.
 
-    func testSyntax() { // Not really a test
-        let initial = Promises.make(promising: Bool.self)
-        _ = Promises.make(awaitingCompletionOf: initial) { initial in
-            throw TestError.error
-        }
+    func testCombineLR() {
+        XCTFail()
+    }
+
+    func testCombineLR1R2() {
+        XCTFail()
+    }
+
+    func testCombineLR1R2R3() {
+        XCTFail()
+    }
+
+    func testCombineL1L2R() {
+        XCTFail()
+    }
+
+    func testCombineL1L2L3R() {
+        XCTFail()
+    }
+
+    func testCombineL1L2R1R2() {
+        XCTFail()
     }
 }
