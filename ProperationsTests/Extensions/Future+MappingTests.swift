@@ -12,56 +12,100 @@ import Properations
 
 class Future_MappingTests: XCTestCase {
 
-    // MARK: compactMapValue
+    // MARK: compactMapToValue
 
-    func testCompactMapValueWithValue() throws {
+    func testCompactMapToValueWithValue() throws {
         let initial = makeAsynchronouslyFulfilledFuture(with: .success(2))
 
-        let future = initial.compactMapValue { $0.isMultiple(of: 2) }
+        let future = initial.compactMapToValue { $0.isMultiple(of: 2) }
         try wait(forCompletionOf: future)
 
         XCTAssertEqual(future.result?.successValue, true)
     }
 
-    func testCompactMapValueWithNil() throws {
+    func testCompactMapToValueWithNil() throws {
         let initial = makeAsynchronouslyFulfilledFuture(with: .success(2))
 
-        let future = initial.compactMapValue { _ -> Bool? in return nil }
+        let future = initial.compactMapToValue { _ -> Bool? in return nil }
         try wait(forCompletionOf: future)
 
         XCTAssertEqual(equatableDescription(of: future.result?.failureValue), equatableDescription(of: ProperationsError.compactMapReturnedNil))
     }
 
-    func testCompactMapValueThrows() throws {
+    func testCompactMapToValueThrows() throws {
         let initial = makeAsynchronouslyFulfilledFuture(with: .success(2))
 
-        let future = initial.compactMapValue { _ -> Bool? in throw TestError.error }
+        let future = initial.compactMapToValue { _ -> Bool? in throw TestError.error }
         try wait(forCompletionOf: future)
 
         XCTAssertEqual(equatableDescription(of: future.result?.failureValue), equatableDescription(of: TestError.error))
     }
 
 
-    // MARK: mapValue
+    // MARK: mapToValue
 
-    func testMapValueWithValue() throws {
+    func testMapToValueWithValue() throws {
         let initial = makeAsynchronouslyFulfilledFuture(with: .success(2))
 
-        let future = initial.mapValue { $0.isMultiple(of: 2) }
+        let future = initial.mapToValue { $0.isMultiple(of: 2) }
         try wait(forCompletionOf: future)
 
         XCTAssertEqual(future.result?.successValue, true)
     }
 
-    func testMapValueThrows() throws {
+    func testMapToValueThrows() throws {
         let initial = makeAsynchronouslyFulfilledFuture(with: .success(2))
 
-        let future = initial.mapValue { _ -> Bool in throw TestError.error }
+        let future = initial.mapToValue { _ -> Bool in throw TestError.error }
         try wait(forCompletionOf: future)
 
         XCTAssertEqual(equatableDescription(of: future.result?.failureValue), equatableDescription(of: TestError.error))
     }
 
+
+    // MARK: compactMapElementsToValue
+
+    func testCompactMapElementsToValueWithSuccess() throws {
+        XCTFail()
+    }
+
+    func testCompactMapElementsToValueWithAFailure() throws {
+        XCTFail()
+    }
+
+
+    // MARK: compactMapElementsToFuture
+
+    func testCompactMapElementsToFutureWithSuccess() throws {
+        XCTFail()
+    }
+
+    func testCompactMapElementsToFutureAFailure() throws {
+        XCTFail()
+    }
+
+
+    // MARK: mapElementsToValue
+
+    func testMapElementsToValueWithSuccess() throws {
+        XCTFail()
+    }
+
+    func testMapElementsToValueWithAFailure() throws {
+        XCTFail()
+    }
+
+
+    // MARK: mapElementsToFuture
+
+    func testElementsToFutureWithSuccess() throws {
+        XCTFail()
+    }
+
+    func testElementsToFutureWithAFailure() throws {
+        XCTFail()
+    }
+    
 
     // MARK: mapFuture
 
@@ -69,7 +113,7 @@ class Future_MappingTests: XCTestCase {
         let initial = makeAsynchronouslyFulfilledFuture(with: .success(2))
         let expected = FutureResult.success(true)
 
-        let future = initial.mapFuture { _ in
+        let future = initial.mapToFuture { _ in
             return self.makeAsynchronouslyFulfilledFuture(with: expected)
         }
         try wait(forCompletionOf: future)
@@ -82,7 +126,7 @@ class Future_MappingTests: XCTestCase {
         let initial = makeAsynchronouslyFulfilledFuture(with: .success(2))
         let expected = FutureResult<Bool>.failure(TestError.error)
 
-        let future = initial.mapFuture { _ in
+        let future = initial.mapToFuture { _ in
             return self.makeAsynchronouslyFulfilledFuture(with: expected)
         }
         try wait(forCompletionOf: future)

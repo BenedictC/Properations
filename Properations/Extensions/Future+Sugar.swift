@@ -17,27 +17,27 @@ public func +<L, R>(lhs: Future<L>, rhs: Future<R>) -> Future<(L, R)> {
 
 public func +<L, R1, R2>(lhs: Future<L>, rhs: Future<(R1, R2)>) -> Future<(L, R1, R2)> {
     return Promises.combine(lhs, rhs)
-        .mapValue { ($0, $1.0, $1.1) }
+        .mapToValue { ($0, $1.0, $1.1) }
 }
 
 public func +<L, R1, R2, R3>(lhs: Future<L>, rhs: Future<(R1, R2, R3)>) -> Future<(L, R1, R2, R3)> {
     return Promises.combine(lhs, rhs)
-        .mapValue { ($0, $1.0, $1.1, $1.2) }
+        .mapToValue { ($0, $1.0, $1.1, $1.2) }
 }
 
 public func +<L1, L2, R>(lhs: Future<(L1, L2)>, rhs: Future<R>) -> Future<(L1, L2, R)> {
     return Promises.combine(lhs, rhs)
-        .mapValue { ($0.0, $0.1, $1) }
+        .mapToValue { ($0.0, $0.1, $1) }
 }
 
 public func +<L1, L2, L3, R>(lhs: Future<(L1, L2, L3)>, rhs: Future<R>) -> Future<(L1, L2, L3, R)> {
     return Promises.combine(lhs, rhs)
-        .mapValue { ($0.0, $0.1, $0.2, $1) }
+        .mapToValue { ($0.0, $0.1, $0.2, $1) }
 }
 
 public func +<L1, L2, R1, R2>(lhs: Future<(L1, L2)>, rhs: Future<(R1, R2)>) -> Future<(L1, L2, R1, R2)> {
     return Promises.combine(lhs, rhs)
-        .mapValue { ($0.0, $0.1, $1.0, $1.1) }
+        .mapToValue { ($0.0, $0.1, $1.0, $1.1) }
 }
 
 
@@ -59,11 +59,10 @@ public extension Collection {
     func raceFutures<S>() -> Future<S> where Element: Future<S> {
         return Promises.race(self)
     }
-
 }
 
 
-// MARK: - Factories
+// MARK: - Factories with generics as parameters
 
 public extension Promises {
 
