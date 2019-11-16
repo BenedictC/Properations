@@ -7,42 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8209970920DBF7FA003E4DE7 /* Properations.h in Headers */ = {isa = PBXBuildFile; fileRef = 8209970720DBF7FA003E4DE7 /* Properations.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8209973B20DBF929003E4DE7 /* FutureOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209973520DBF928003E4DE7 /* FutureOperation.swift */; };
-		8209973C20DBF929003E4DE7 /* PromiseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209973620DBF928003E4DE7 /* PromiseOperation.swift */; };
-		8209973F20DBF929003E4DE7 /* OperationQueue+CompletionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209973920DBF928003E4DE7 /* OperationQueue+CompletionOperation.swift */; };
-		8209974020DBF929003E4DE7 /* OperationStateCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209973A20DBF929003E4DE7 /* OperationStateCoordinator.swift */; };
-		82129562214675A400D914B5 /* FutureResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82129561214675A400D914B5 /* FutureResultTests.swift */; };
 		82129564214675A400D914B5 /* Properations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8209970420DBF7FA003E4DE7 /* Properations.framework */; };
-		821A5BFE220D98B400E8047C /* ProperationsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5BFD220D98B400E8047C /* ProperationsConstants.swift */; };
-		821A5C00220DA36000E8047C /* Promise+Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5BFF220DA36000E8047C /* Promise+Factories.swift */; };
-		821A5C02220DA41B00E8047C /* Future+Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5C01220DA41B00E8047C /* Future+Events.swift */; };
-		821A5C04220DA4FD00E8047C /* Future+Interdependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5C03220DA4FD00E8047C /* Future+Interdependencies.swift */; };
-		821A5C06220DA54500E8047C /* Future+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5C05220DA54500E8047C /* Future+Sugar.swift */; };
-		821A5C08220DA73D00E8047C /* Future+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5C07220DA73D00E8047C /* Future+Mapping.swift */; };
-		821A5C0A220DA76300E8047C /* Future+Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5C09220DA76300E8047C /* Future+Timing.swift */; };
-		821A5C0C220DA79000E8047C /* Future+ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5C0B220DA79000E8047C /* Future+ErrorHandling.swift */; };
-		821A5C0E220DA7FB00E8047C /* Future+Combining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A5C0D220DA7FB00E8047C /* Future+Combining.swift */; };
-		828B892D22EE405C0043B64B /* Future+ChainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828B892C22EE405C0043B64B /* Future+ChainAccess.swift */; };
-		828B892F22EE41470043B64B /* Future+ChainAccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828B892E22EE41470043B64B /* Future+ChainAccessTests.swift */; };
-		829E898B219C325600B0278B /* BlockingPromiseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829E898A219C325600B0278B /* BlockingPromiseOperation.swift */; };
-		82C0A501223F8E4100DA8197 /* FutureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C0A500223F8E4100DA8197 /* FutureResult.swift */; };
-		82C7958822EB187200E90E82 /* OperationStateCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7958722EB187200E90E82 /* OperationStateCoordinatorTests.swift */; };
-		82C7958A22EB188C00E90E82 /* OperationQueueCompletionOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7958922EB188C00E90E82 /* OperationQueueCompletionOperationTests.swift */; };
-		82C7958E22EB18B600E90E82 /* FutureOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7958D22EB18B600E90E82 /* FutureOperationTests.swift */; };
-		82C7959022EB18C000E90E82 /* PromiseOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7958F22EB18C000E90E82 /* PromiseOperationTests.swift */; };
-		82C7959222EB18C700E90E82 /* BlockingPromiseOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7959122EB18C700E90E82 /* BlockingPromiseOperationTests.swift */; };
-		82C7959422EB190700E90E82 /* Future+GuardingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7959322EB190700E90E82 /* Future+GuardingTests.swift */; };
-		82C7959622EB191100E90E82 /* Future+CombiningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7959522EB191100E90E82 /* Future+CombiningTests.swift */; };
-		82C7959822EB191A00E90E82 /* Future+EventsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7959722EB191A00E90E82 /* Future+EventsTests.swift */; };
-		82C7959A22EB192600E90E82 /* Future+ErrorHandlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7959922EB192600E90E82 /* Future+ErrorHandlingTests.swift */; };
-		82C7959C22EB193000E90E82 /* Future+InterdependenciesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7959B22EB193000E90E82 /* Future+InterdependenciesTests.swift */; };
-		82C7959E22EB193800E90E82 /* Future+SugarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7959D22EB193800E90E82 /* Future+SugarTests.swift */; };
-		82C795A022EB194600E90E82 /* Future+TimingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7959F22EB194600E90E82 /* Future+TimingTests.swift */; };
-		82C795A222EB195000E90E82 /* Future+MappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C795A122EB195000E90E82 /* Future+MappingTests.swift */; };
-		82C795A422EB195D00E90E82 /* Promises+FactoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C795A322EB195D00E90E82 /* Promises+FactoriesTests.swift */; };
-		82C795DD22EB546200E90E82 /* TestAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C795DC22EB546200E90E82 /* TestAdditions.swift */; };
-		82C795DF22EBB8E200E90E82 /* Future+Guarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C795DE22EBB8E200E90E82 /* Future+Guarding.swift */; };
+		82A039C1237F2CDF000B85F1 /* OperationStateCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039AC237F2CDF000B85F1 /* OperationStateCoordinator.swift */; };
+		82A039C2237F2CDF000B85F1 /* OperationQueue+CompletionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039AD237F2CDF000B85F1 /* OperationQueue+CompletionOperation.swift */; };
+		82A039C3237F2CDF000B85F1 /* Future+Interdependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039AF237F2CDF000B85F1 /* Future+Interdependencies.swift */; };
+		82A039C4237F2CDF000B85F1 /* Future+ChainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039B0237F2CDF000B85F1 /* Future+ChainAccess.swift */; };
+		82A039C5237F2CDF000B85F1 /* Future+Combining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039B1237F2CDF000B85F1 /* Future+Combining.swift */; };
+		82A039C6237F2CDF000B85F1 /* Future+Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039B2237F2CDF000B85F1 /* Future+Events.swift */; };
+		82A039C7237F2CDF000B85F1 /* Promise+Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039B3237F2CDF000B85F1 /* Promise+Factories.swift */; };
+		82A039C8237F2CDF000B85F1 /* Future+Guarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039B4237F2CDF000B85F1 /* Future+Guarding.swift */; };
+		82A039C9237F2CDF000B85F1 /* Future+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039B5237F2CDF000B85F1 /* Future+Sugar.swift */; };
+		82A039CA237F2CDF000B85F1 /* Future+Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039B6237F2CDF000B85F1 /* Future+Timing.swift */; };
+		82A039CB237F2CDF000B85F1 /* Future+ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039B7237F2CDF000B85F1 /* Future+ErrorHandling.swift */; };
+		82A039CC237F2CDF000B85F1 /* Future+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039B8237F2CDF000B85F1 /* Future+Mapping.swift */; };
+		82A039CD237F2CDF000B85F1 /* ProperationsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039B9237F2CDF000B85F1 /* ProperationsConstants.swift */; };
+		82A039CE237F2CDF000B85F1 /* BlockingPromiseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039BB237F2CDF000B85F1 /* BlockingPromiseOperation.swift */; };
+		82A039CF237F2CDF000B85F1 /* FutureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039BC237F2CDF000B85F1 /* FutureResult.swift */; };
+		82A039D0237F2CDF000B85F1 /* PromiseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039BD237F2CDF000B85F1 /* PromiseOperation.swift */; };
+		82A039D1237F2CDF000B85F1 /* FutureOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039BE237F2CDF000B85F1 /* FutureOperation.swift */; };
+		82A039E9237F2CF3000B85F1 /* OperationQueueCompletionOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039D5237F2CF3000B85F1 /* OperationQueueCompletionOperationTests.swift */; };
+		82A039EA237F2CF3000B85F1 /* OperationStateCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039D6237F2CF3000B85F1 /* OperationStateCoordinatorTests.swift */; };
+		82A039EB237F2CF3000B85F1 /* Promises+FactoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039D8237F2CF3000B85F1 /* Promises+FactoriesTests.swift */; };
+		82A039EC237F2CF3000B85F1 /* Future+MappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039D9237F2CF3000B85F1 /* Future+MappingTests.swift */; };
+		82A039ED237F2CF3000B85F1 /* Future+GuardingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039DA237F2CF3000B85F1 /* Future+GuardingTests.swift */; };
+		82A039EE237F2CF3000B85F1 /* Future+InterdependenciesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039DB237F2CF3000B85F1 /* Future+InterdependenciesTests.swift */; };
+		82A039EF237F2CF3000B85F1 /* Future+EventsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039DC237F2CF3000B85F1 /* Future+EventsTests.swift */; };
+		82A039F0237F2CF3000B85F1 /* Future+ChainAccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039DD237F2CF3000B85F1 /* Future+ChainAccessTests.swift */; };
+		82A039F1237F2CF3000B85F1 /* Future+TimingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039DE237F2CF3000B85F1 /* Future+TimingTests.swift */; };
+		82A039F2237F2CF3000B85F1 /* Future+ErrorHandlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039DF237F2CF3000B85F1 /* Future+ErrorHandlingTests.swift */; };
+		82A039F3237F2CF3000B85F1 /* Future+SugarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039E0237F2CF3000B85F1 /* Future+SugarTests.swift */; };
+		82A039F4237F2CF3000B85F1 /* Future+CombiningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039E1237F2CF3000B85F1 /* Future+CombiningTests.swift */; };
+		82A039F5237F2CF3000B85F1 /* TestAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039E2237F2CF3000B85F1 /* TestAdditions.swift */; };
+		82A039F6237F2CF3000B85F1 /* PromiseOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039E4237F2CF3000B85F1 /* PromiseOperationTests.swift */; };
+		82A039F7237F2CF3000B85F1 /* BlockingPromiseOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039E5237F2CF3000B85F1 /* BlockingPromiseOperationTests.swift */; };
+		82A039F8237F2CF3000B85F1 /* FutureResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039E6237F2CF3000B85F1 /* FutureResultTests.swift */; };
+		82A039F9237F2CF3000B85F1 /* FutureOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A039E7237F2CF3000B85F1 /* FutureOperationTests.swift */; };
+		82A039FB237F2DE3000B85F1 /* Properations.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A039A9237F2CDF000B85F1 /* Properations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,46 +57,47 @@
 
 /* Begin PBXFileReference section */
 		8209970420DBF7FA003E4DE7 /* Properations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Properations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8209970720DBF7FA003E4DE7 /* Properations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Properations.h; sourceTree = "<group>"; };
-		8209970820DBF7FA003E4DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8209973520DBF928003E4DE7 /* FutureOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureOperation.swift; sourceTree = "<group>"; };
-		8209973620DBF928003E4DE7 /* PromiseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromiseOperation.swift; sourceTree = "<group>"; };
-		8209973920DBF928003E4DE7 /* OperationQueue+CompletionOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OperationQueue+CompletionOperation.swift"; sourceTree = "<group>"; };
-		8209973A20DBF929003E4DE7 /* OperationStateCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationStateCoordinator.swift; sourceTree = "<group>"; };
 		8212955F214675A400D914B5 /* ProperationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProperationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		82129561214675A400D914B5 /* FutureResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureResultTests.swift; sourceTree = "<group>"; };
-		82129563214675A400D914B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		821A5BFD220D98B400E8047C /* ProperationsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProperationsConstants.swift; sourceTree = "<group>"; };
-		821A5BFF220DA36000E8047C /* Promise+Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Factories.swift"; sourceTree = "<group>"; };
-		821A5C01220DA41B00E8047C /* Future+Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+Events.swift"; sourceTree = "<group>"; };
-		821A5C03220DA4FD00E8047C /* Future+Interdependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+Interdependencies.swift"; sourceTree = "<group>"; };
-		821A5C05220DA54500E8047C /* Future+Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+Sugar.swift"; sourceTree = "<group>"; };
-		821A5C07220DA73D00E8047C /* Future+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+Mapping.swift"; sourceTree = "<group>"; };
-		821A5C09220DA76300E8047C /* Future+Timing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+Timing.swift"; sourceTree = "<group>"; };
-		821A5C0B220DA79000E8047C /* Future+ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+ErrorHandling.swift"; sourceTree = "<group>"; };
-		821A5C0D220DA7FB00E8047C /* Future+Combining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+Combining.swift"; sourceTree = "<group>"; };
 		823D3132214BBACA008E27C7 /* Properations.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Properations.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		828B892C22EE405C0043B64B /* Future+ChainAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+ChainAccess.swift"; sourceTree = "<group>"; };
-		828B892E22EE41470043B64B /* Future+ChainAccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+ChainAccessTests.swift"; sourceTree = "<group>"; };
-		829E898A219C325600B0278B /* BlockingPromiseOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockingPromiseOperation.swift; sourceTree = "<group>"; };
-		82C0A500223F8E4100DA8197 /* FutureResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureResult.swift; sourceTree = "<group>"; };
-		82C7958722EB187200E90E82 /* OperationStateCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationStateCoordinatorTests.swift; sourceTree = "<group>"; };
-		82C7958922EB188C00E90E82 /* OperationQueueCompletionOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationQueueCompletionOperationTests.swift; sourceTree = "<group>"; };
-		82C7958D22EB18B600E90E82 /* FutureOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureOperationTests.swift; sourceTree = "<group>"; };
-		82C7958F22EB18C000E90E82 /* PromiseOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseOperationTests.swift; sourceTree = "<group>"; };
-		82C7959122EB18C700E90E82 /* BlockingPromiseOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockingPromiseOperationTests.swift; sourceTree = "<group>"; };
-		82C7959322EB190700E90E82 /* Future+GuardingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+GuardingTests.swift"; sourceTree = "<group>"; };
-		82C7959522EB191100E90E82 /* Future+CombiningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+CombiningTests.swift"; sourceTree = "<group>"; };
-		82C7959722EB191A00E90E82 /* Future+EventsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+EventsTests.swift"; sourceTree = "<group>"; };
-		82C7959922EB192600E90E82 /* Future+ErrorHandlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+ErrorHandlingTests.swift"; sourceTree = "<group>"; };
-		82C7959B22EB193000E90E82 /* Future+InterdependenciesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+InterdependenciesTests.swift"; sourceTree = "<group>"; };
-		82C7959D22EB193800E90E82 /* Future+SugarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+SugarTests.swift"; sourceTree = "<group>"; };
-		82C7959F22EB194600E90E82 /* Future+TimingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+TimingTests.swift"; sourceTree = "<group>"; };
-		82C795A122EB195000E90E82 /* Future+MappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+MappingTests.swift"; sourceTree = "<group>"; };
-		82C795A322EB195D00E90E82 /* Promises+FactoriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promises+FactoriesTests.swift"; sourceTree = "<group>"; };
-		82C795DC22EB546200E90E82 /* TestAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAdditions.swift; sourceTree = "<group>"; };
-		82C795DE22EBB8E200E90E82 /* Future+Guarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+Guarding.swift"; sourceTree = "<group>"; };
-		82E8809C22CC02CD0024B223 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		82A039A9237F2CDF000B85F1 /* Properations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Properations.h; sourceTree = "<group>"; };
+		82A039AA237F2CDF000B85F1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82A039AC237F2CDF000B85F1 /* OperationStateCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationStateCoordinator.swift; sourceTree = "<group>"; };
+		82A039AD237F2CDF000B85F1 /* OperationQueue+CompletionOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OperationQueue+CompletionOperation.swift"; sourceTree = "<group>"; };
+		82A039AF237F2CDF000B85F1 /* Future+Interdependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+Interdependencies.swift"; sourceTree = "<group>"; };
+		82A039B0237F2CDF000B85F1 /* Future+ChainAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+ChainAccess.swift"; sourceTree = "<group>"; };
+		82A039B1237F2CDF000B85F1 /* Future+Combining.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+Combining.swift"; sourceTree = "<group>"; };
+		82A039B2237F2CDF000B85F1 /* Future+Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+Events.swift"; sourceTree = "<group>"; };
+		82A039B3237F2CDF000B85F1 /* Promise+Factories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Factories.swift"; sourceTree = "<group>"; };
+		82A039B4237F2CDF000B85F1 /* Future+Guarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+Guarding.swift"; sourceTree = "<group>"; };
+		82A039B5237F2CDF000B85F1 /* Future+Sugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+Sugar.swift"; sourceTree = "<group>"; };
+		82A039B6237F2CDF000B85F1 /* Future+Timing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+Timing.swift"; sourceTree = "<group>"; };
+		82A039B7237F2CDF000B85F1 /* Future+ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+ErrorHandling.swift"; sourceTree = "<group>"; };
+		82A039B8237F2CDF000B85F1 /* Future+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+Mapping.swift"; sourceTree = "<group>"; };
+		82A039B9237F2CDF000B85F1 /* ProperationsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProperationsConstants.swift; sourceTree = "<group>"; };
+		82A039BB237F2CDF000B85F1 /* BlockingPromiseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockingPromiseOperation.swift; sourceTree = "<group>"; };
+		82A039BC237F2CDF000B85F1 /* FutureResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureResult.swift; sourceTree = "<group>"; };
+		82A039BD237F2CDF000B85F1 /* PromiseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromiseOperation.swift; sourceTree = "<group>"; };
+		82A039BE237F2CDF000B85F1 /* FutureOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureOperation.swift; sourceTree = "<group>"; };
+		82A039D5237F2CF3000B85F1 /* OperationQueueCompletionOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationQueueCompletionOperationTests.swift; sourceTree = "<group>"; };
+		82A039D6237F2CF3000B85F1 /* OperationStateCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationStateCoordinatorTests.swift; sourceTree = "<group>"; };
+		82A039D8237F2CF3000B85F1 /* Promises+FactoriesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promises+FactoriesTests.swift"; sourceTree = "<group>"; };
+		82A039D9237F2CF3000B85F1 /* Future+MappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+MappingTests.swift"; sourceTree = "<group>"; };
+		82A039DA237F2CF3000B85F1 /* Future+GuardingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+GuardingTests.swift"; sourceTree = "<group>"; };
+		82A039DB237F2CF3000B85F1 /* Future+InterdependenciesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+InterdependenciesTests.swift"; sourceTree = "<group>"; };
+		82A039DC237F2CF3000B85F1 /* Future+EventsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+EventsTests.swift"; sourceTree = "<group>"; };
+		82A039DD237F2CF3000B85F1 /* Future+ChainAccessTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+ChainAccessTests.swift"; sourceTree = "<group>"; };
+		82A039DE237F2CF3000B85F1 /* Future+TimingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+TimingTests.swift"; sourceTree = "<group>"; };
+		82A039DF237F2CF3000B85F1 /* Future+ErrorHandlingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+ErrorHandlingTests.swift"; sourceTree = "<group>"; };
+		82A039E0237F2CF3000B85F1 /* Future+SugarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+SugarTests.swift"; sourceTree = "<group>"; };
+		82A039E1237F2CF3000B85F1 /* Future+CombiningTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+CombiningTests.swift"; sourceTree = "<group>"; };
+		82A039E2237F2CF3000B85F1 /* TestAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAdditions.swift; sourceTree = "<group>"; };
+		82A039E4237F2CF3000B85F1 /* PromiseOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromiseOperationTests.swift; sourceTree = "<group>"; };
+		82A039E5237F2CF3000B85F1 /* BlockingPromiseOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockingPromiseOperationTests.swift; sourceTree = "<group>"; };
+		82A039E6237F2CF3000B85F1 /* FutureResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureResultTests.swift; sourceTree = "<group>"; };
+		82A039E7237F2CF3000B85F1 /* FutureOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureOperationTests.swift; sourceTree = "<group>"; };
+		82A039E8237F2CF3000B85F1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82A039FC237F2E4C000B85F1 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		82E8809C22CC02CD0024B223 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +122,11 @@
 		820996FA20DBF7FA003E4DE7 = {
 			isa = PBXGroup;
 			children = (
-				82E8809C22CC02CD0024B223 /* Readme.md */,
+				82A039FC237F2E4C000B85F1 /* Package.swift */,
+				82E8809C22CC02CD0024B223 /* README.md */,
 				823D3132214BBACA008E27C7 /* Properations.podspec */,
-				8209970620DBF7FA003E4DE7 /* Properations */,
-				82129560214675A400D914B5 /* ProperationsTests */,
+				82A039A6237F2CDF000B85F1 /* Sources */,
+				82A039D2237F2CF3000B85F1 /* Tests */,
 				8209970520DBF7FA003E4DE7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -138,111 +140,127 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8209970620DBF7FA003E4DE7 /* Properations */ = {
+		82A039A6237F2CDF000B85F1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				821A5BFD220D98B400E8047C /* ProperationsConstants.swift */,
-				8209976020DC5993003E4DE7 /* Internal */,
-				82ABEDA520E6697F00285E43 /* Core Types */,
-				821A5BFC220D988200E8047C /* Extensions */,
-				8209975D20DC5822003E4DE7 /* Resources */,
+				82A039A7237F2CDF000B85F1 /* Properations */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		82A039A7237F2CDF000B85F1 /* Properations */ = {
+			isa = PBXGroup;
+			children = (
+				82A039A8237F2CDF000B85F1 /* Resources */,
+				82A039AB237F2CDF000B85F1 /* Internal */,
+				82A039AE237F2CDF000B85F1 /* Extensions */,
+				82A039B9237F2CDF000B85F1 /* ProperationsConstants.swift */,
+				82A039BA237F2CDF000B85F1 /* Core Types */,
 			);
 			path = Properations;
 			sourceTree = "<group>";
 		};
-		8209975D20DC5822003E4DE7 /* Resources */ = {
+		82A039A8237F2CDF000B85F1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8209970720DBF7FA003E4DE7 /* Properations.h */,
-				8209970820DBF7FA003E4DE7 /* Info.plist */,
+				82A039A9237F2CDF000B85F1 /* Properations.h */,
+				82A039AA237F2CDF000B85F1 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		8209976020DC5993003E4DE7 /* Internal */ = {
+		82A039AB237F2CDF000B85F1 /* Internal */ = {
 			isa = PBXGroup;
 			children = (
-				8209973A20DBF929003E4DE7 /* OperationStateCoordinator.swift */,
-				8209973920DBF928003E4DE7 /* OperationQueue+CompletionOperation.swift */,
+				82A039AC237F2CDF000B85F1 /* OperationStateCoordinator.swift */,
+				82A039AD237F2CDF000B85F1 /* OperationQueue+CompletionOperation.swift */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
 		};
-		82129560214675A400D914B5 /* ProperationsTests */ = {
+		82A039AE237F2CDF000B85F1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				82C7958B22EB189500E90E82 /* Internal */,
-				82C7958C22EB18A100E90E82 /* Core Types */,
-				82C795A522EB196200E90E82 /* Extensions */,
-				82129563214675A400D914B5 /* Info.plist */,
-				82C795DC22EB546200E90E82 /* TestAdditions.swift */,
+				82A039AF237F2CDF000B85F1 /* Future+Interdependencies.swift */,
+				82A039B0237F2CDF000B85F1 /* Future+ChainAccess.swift */,
+				82A039B1237F2CDF000B85F1 /* Future+Combining.swift */,
+				82A039B2237F2CDF000B85F1 /* Future+Events.swift */,
+				82A039B3237F2CDF000B85F1 /* Promise+Factories.swift */,
+				82A039B4237F2CDF000B85F1 /* Future+Guarding.swift */,
+				82A039B5237F2CDF000B85F1 /* Future+Sugar.swift */,
+				82A039B6237F2CDF000B85F1 /* Future+Timing.swift */,
+				82A039B7237F2CDF000B85F1 /* Future+ErrorHandling.swift */,
+				82A039B8237F2CDF000B85F1 /* Future+Mapping.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		82A039BA237F2CDF000B85F1 /* Core Types */ = {
+			isa = PBXGroup;
+			children = (
+				82A039BB237F2CDF000B85F1 /* BlockingPromiseOperation.swift */,
+				82A039BC237F2CDF000B85F1 /* FutureResult.swift */,
+				82A039BD237F2CDF000B85F1 /* PromiseOperation.swift */,
+				82A039BE237F2CDF000B85F1 /* FutureOperation.swift */,
+			);
+			path = "Core Types";
+			sourceTree = "<group>";
+		};
+		82A039D2237F2CF3000B85F1 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				82A039D3237F2CF3000B85F1 /* ProperationsTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		82A039D3237F2CF3000B85F1 /* ProperationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				82A039D4237F2CF3000B85F1 /* Internal */,
+				82A039D7237F2CF3000B85F1 /* Extensions */,
+				82A039E2237F2CF3000B85F1 /* TestAdditions.swift */,
+				82A039E3237F2CF3000B85F1 /* Core Types */,
+				82A039E8237F2CF3000B85F1 /* Info.plist */,
 			);
 			path = ProperationsTests;
 			sourceTree = "<group>";
 		};
-		821A5BFC220D988200E8047C /* Extensions */ = {
+		82A039D4237F2CF3000B85F1 /* Internal */ = {
 			isa = PBXGroup;
 			children = (
-				828B892C22EE405C0043B64B /* Future+ChainAccess.swift */,
-				821A5C0D220DA7FB00E8047C /* Future+Combining.swift */,
-				821A5C0B220DA79000E8047C /* Future+ErrorHandling.swift */,
-				821A5C01220DA41B00E8047C /* Future+Events.swift */,
-				82C795DE22EBB8E200E90E82 /* Future+Guarding.swift */,
-				821A5C03220DA4FD00E8047C /* Future+Interdependencies.swift */,
-				821A5C07220DA73D00E8047C /* Future+Mapping.swift */,
-				821A5C05220DA54500E8047C /* Future+Sugar.swift */,
-				821A5C09220DA76300E8047C /* Future+Timing.swift */,
-				821A5BFF220DA36000E8047C /* Promise+Factories.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		82ABEDA520E6697F00285E43 /* Core Types */ = {
-			isa = PBXGroup;
-			children = (
-				82C0A500223F8E4100DA8197 /* FutureResult.swift */,
-				8209973520DBF928003E4DE7 /* FutureOperation.swift */,
-				8209973620DBF928003E4DE7 /* PromiseOperation.swift */,
-				829E898A219C325600B0278B /* BlockingPromiseOperation.swift */,
-			);
-			path = "Core Types";
-			sourceTree = "<group>";
-		};
-		82C7958B22EB189500E90E82 /* Internal */ = {
-			isa = PBXGroup;
-			children = (
-				82C7958722EB187200E90E82 /* OperationStateCoordinatorTests.swift */,
-				82C7958922EB188C00E90E82 /* OperationQueueCompletionOperationTests.swift */,
+				82A039D5237F2CF3000B85F1 /* OperationQueueCompletionOperationTests.swift */,
+				82A039D6237F2CF3000B85F1 /* OperationStateCoordinatorTests.swift */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
 		};
-		82C7958C22EB18A100E90E82 /* Core Types */ = {
+		82A039D7237F2CF3000B85F1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				82129561214675A400D914B5 /* FutureResultTests.swift */,
-				82C7958D22EB18B600E90E82 /* FutureOperationTests.swift */,
-				82C7958F22EB18C000E90E82 /* PromiseOperationTests.swift */,
-				82C7959122EB18C700E90E82 /* BlockingPromiseOperationTests.swift */,
-			);
-			path = "Core Types";
-			sourceTree = "<group>";
-		};
-		82C795A522EB196200E90E82 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				828B892E22EE41470043B64B /* Future+ChainAccessTests.swift */,
-				82C7959522EB191100E90E82 /* Future+CombiningTests.swift */,
-				82C7959922EB192600E90E82 /* Future+ErrorHandlingTests.swift */,
-				82C7959722EB191A00E90E82 /* Future+EventsTests.swift */,
-				82C7959322EB190700E90E82 /* Future+GuardingTests.swift */,
-				82C7959B22EB193000E90E82 /* Future+InterdependenciesTests.swift */,
-				82C795A122EB195000E90E82 /* Future+MappingTests.swift */,
-				82C7959D22EB193800E90E82 /* Future+SugarTests.swift */,
-				82C7959F22EB194600E90E82 /* Future+TimingTests.swift */,
-				82C795A322EB195D00E90E82 /* Promises+FactoriesTests.swift */,
+				82A039D8237F2CF3000B85F1 /* Promises+FactoriesTests.swift */,
+				82A039D9237F2CF3000B85F1 /* Future+MappingTests.swift */,
+				82A039DA237F2CF3000B85F1 /* Future+GuardingTests.swift */,
+				82A039DB237F2CF3000B85F1 /* Future+InterdependenciesTests.swift */,
+				82A039DC237F2CF3000B85F1 /* Future+EventsTests.swift */,
+				82A039DD237F2CF3000B85F1 /* Future+ChainAccessTests.swift */,
+				82A039DE237F2CF3000B85F1 /* Future+TimingTests.swift */,
+				82A039DF237F2CF3000B85F1 /* Future+ErrorHandlingTests.swift */,
+				82A039E0237F2CF3000B85F1 /* Future+SugarTests.swift */,
+				82A039E1237F2CF3000B85F1 /* Future+CombiningTests.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		82A039E3237F2CF3000B85F1 /* Core Types */ = {
+			isa = PBXGroup;
+			children = (
+				82A039E4237F2CF3000B85F1 /* PromiseOperationTests.swift */,
+				82A039E5237F2CF3000B85F1 /* BlockingPromiseOperationTests.swift */,
+				82A039E6237F2CF3000B85F1 /* FutureResultTests.swift */,
+				82A039E7237F2CF3000B85F1 /* FutureOperationTests.swift */,
+			);
+			path = "Core Types";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +270,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8209970920DBF7FA003E4DE7 /* Properations.h in Headers */,
+				82A039FB237F2DE3000B85F1 /* Properations.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,23 +372,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8209974020DBF929003E4DE7 /* OperationStateCoordinator.swift in Sources */,
-				821A5C02220DA41B00E8047C /* Future+Events.swift in Sources */,
-				821A5BFE220D98B400E8047C /* ProperationsConstants.swift in Sources */,
-				821A5C08220DA73D00E8047C /* Future+Mapping.swift in Sources */,
-				8209973B20DBF929003E4DE7 /* FutureOperation.swift in Sources */,
-				821A5C00220DA36000E8047C /* Promise+Factories.swift in Sources */,
-				821A5C04220DA4FD00E8047C /* Future+Interdependencies.swift in Sources */,
-				82C795DF22EBB8E200E90E82 /* Future+Guarding.swift in Sources */,
-				8209973F20DBF929003E4DE7 /* OperationQueue+CompletionOperation.swift in Sources */,
-				821A5C0A220DA76300E8047C /* Future+Timing.swift in Sources */,
-				821A5C06220DA54500E8047C /* Future+Sugar.swift in Sources */,
-				821A5C0C220DA79000E8047C /* Future+ErrorHandling.swift in Sources */,
-				821A5C0E220DA7FB00E8047C /* Future+Combining.swift in Sources */,
-				8209973C20DBF929003E4DE7 /* PromiseOperation.swift in Sources */,
-				828B892D22EE405C0043B64B /* Future+ChainAccess.swift in Sources */,
-				829E898B219C325600B0278B /* BlockingPromiseOperation.swift in Sources */,
-				82C0A501223F8E4100DA8197 /* FutureResult.swift in Sources */,
+				82A039CB237F2CDF000B85F1 /* Future+ErrorHandling.swift in Sources */,
+				82A039D0237F2CDF000B85F1 /* PromiseOperation.swift in Sources */,
+				82A039CC237F2CDF000B85F1 /* Future+Mapping.swift in Sources */,
+				82A039C9237F2CDF000B85F1 /* Future+Sugar.swift in Sources */,
+				82A039C1237F2CDF000B85F1 /* OperationStateCoordinator.swift in Sources */,
+				82A039C7237F2CDF000B85F1 /* Promise+Factories.swift in Sources */,
+				82A039D1237F2CDF000B85F1 /* FutureOperation.swift in Sources */,
+				82A039C5237F2CDF000B85F1 /* Future+Combining.swift in Sources */,
+				82A039CE237F2CDF000B85F1 /* BlockingPromiseOperation.swift in Sources */,
+				82A039CA237F2CDF000B85F1 /* Future+Timing.swift in Sources */,
+				82A039C3237F2CDF000B85F1 /* Future+Interdependencies.swift in Sources */,
+				82A039C6237F2CDF000B85F1 /* Future+Events.swift in Sources */,
+				82A039CF237F2CDF000B85F1 /* FutureResult.swift in Sources */,
+				82A039C4237F2CDF000B85F1 /* Future+ChainAccess.swift in Sources */,
+				82A039CD237F2CDF000B85F1 /* ProperationsConstants.swift in Sources */,
+				82A039C2237F2CDF000B85F1 /* OperationQueue+CompletionOperation.swift in Sources */,
+				82A039C8237F2CDF000B85F1 /* Future+Guarding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,23 +396,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82C7959822EB191A00E90E82 /* Future+EventsTests.swift in Sources */,
-				82C7958E22EB18B600E90E82 /* FutureOperationTests.swift in Sources */,
-				82C7959A22EB192600E90E82 /* Future+ErrorHandlingTests.swift in Sources */,
-				82C7958822EB187200E90E82 /* OperationStateCoordinatorTests.swift in Sources */,
-				82C795DD22EB546200E90E82 /* TestAdditions.swift in Sources */,
-				82C795A422EB195D00E90E82 /* Promises+FactoriesTests.swift in Sources */,
-				82C7958A22EB188C00E90E82 /* OperationQueueCompletionOperationTests.swift in Sources */,
-				82C795A022EB194600E90E82 /* Future+TimingTests.swift in Sources */,
-				82C7959022EB18C000E90E82 /* PromiseOperationTests.swift in Sources */,
-				82C7959C22EB193000E90E82 /* Future+InterdependenciesTests.swift in Sources */,
-				82C7959222EB18C700E90E82 /* BlockingPromiseOperationTests.swift in Sources */,
-				82C7959622EB191100E90E82 /* Future+CombiningTests.swift in Sources */,
-				82C7959E22EB193800E90E82 /* Future+SugarTests.swift in Sources */,
-				828B892F22EE41470043B64B /* Future+ChainAccessTests.swift in Sources */,
-				82129562214675A400D914B5 /* FutureResultTests.swift in Sources */,
-				82C795A222EB195000E90E82 /* Future+MappingTests.swift in Sources */,
-				82C7959422EB190700E90E82 /* Future+GuardingTests.swift in Sources */,
+				82A039EA237F2CF3000B85F1 /* OperationStateCoordinatorTests.swift in Sources */,
+				82A039ED237F2CF3000B85F1 /* Future+GuardingTests.swift in Sources */,
+				82A039F2237F2CF3000B85F1 /* Future+ErrorHandlingTests.swift in Sources */,
+				82A039EC237F2CF3000B85F1 /* Future+MappingTests.swift in Sources */,
+				82A039EB237F2CF3000B85F1 /* Promises+FactoriesTests.swift in Sources */,
+				82A039EE237F2CF3000B85F1 /* Future+InterdependenciesTests.swift in Sources */,
+				82A039F3237F2CF3000B85F1 /* Future+SugarTests.swift in Sources */,
+				82A039F7237F2CF3000B85F1 /* BlockingPromiseOperationTests.swift in Sources */,
+				82A039F1237F2CF3000B85F1 /* Future+TimingTests.swift in Sources */,
+				82A039F5237F2CF3000B85F1 /* TestAdditions.swift in Sources */,
+				82A039EF237F2CF3000B85F1 /* Future+EventsTests.swift in Sources */,
+				82A039F4237F2CF3000B85F1 /* Future+CombiningTests.swift in Sources */,
+				82A039F9237F2CF3000B85F1 /* FutureOperationTests.swift in Sources */,
+				82A039F0237F2CF3000B85F1 /* Future+ChainAccessTests.swift in Sources */,
+				82A039E9237F2CF3000B85F1 /* OperationQueueCompletionOperationTests.swift in Sources */,
+				82A039F6237F2CF3000B85F1 /* PromiseOperationTests.swift in Sources */,
+				82A039F8237F2CF3000B85F1 /* FutureResultTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +560,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Properations/Resources/Info.plist;
+				INFOPLIST_FILE = Sources/Properations/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -569,7 +587,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Properations/Resources/Info.plist;
+				INFOPLIST_FILE = Sources/Properations/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -587,9 +605,10 @@
 		82129567214675A400D914B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C5J36ZEUQS;
-				INFOPLIST_FILE = ProperationsTests/Info.plist;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Tests/ProperationsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -597,6 +616,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.benedictcohen.ProperationsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -604,9 +624,10 @@
 		82129568214675A400D914B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C5J36ZEUQS;
-				INFOPLIST_FILE = ProperationsTests/Info.plist;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Tests/ProperationsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -614,6 +635,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.benedictcohen.ProperationsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
